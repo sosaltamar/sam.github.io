@@ -1,0 +1,187 @@
+*{
+box-sizing: border-box;
+
+}
+#navbar-pinterest{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    margin: 0px 10px;
+    top: 0;
+    padding: 10px 0px;
+    z-index: 2;
+}
+#logo{
+    height: 28px;
+    width: 28px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-color: red;
+}
+#logo:hover{
+    background-color: #efefef;
+    transition: 1s;
+}
+#inicio{
+    width: 70px;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-weight: 900;
+    color: black;
+    background-color: #efefef;
+    border: none;
+
+}
+#inicio:hover{
+    transition: 1s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#hoy{
+    width: 60px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 10px;
+    font-weight: 900;
+    background-color: none;
+    color: black;
+    background-color: #efefef;
+}
+#hoy:hover{
+    transition: 1s;
+    background-color: black;
+    color: white;
+    cursor: pointer
+}
+#finder{
+    width: 620px;
+    height: 40px;
+    border-radius: 30px;
+}
+#notifications{
+    width: 60px;
+    height: 30px;
+    padding: 5px, 5px;
+}
+#notifications:hover{
+    cursor: pointer;
+    transition: 2s;
+    background-color: #efefef;
+    border-radius: 50px;
+}
+#message{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+#message:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #efefef;
+}
+#profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#profile:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #efefef;
+}
+#down{
+    width: 40px;
+    height: 35px;
+    align-items: flex-end;
+}
+#down:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #efefef;
+}
+#content{
+    position: absolute;
+}
+.targets{
+    display:  grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 10px;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.card-image{
+    position: static;
+}
+.card-image img{
+    border-radius: 15px;
+}
+
+.guardar{
+    right: 20px;
+    top: 20px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    width: 75px;
+    font-weight: 600;
+    position: absolute;
+    background-color: red;
+}
+.guardar:hover{
+     cursor: pointer;
+ }
+
+.file img{
+    border-radius: 50px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    right: 80px;
+    bottom: 82px;
+    background-color:blanchedalmond
+}
+.file img:hover{
+    cursor: pointer;
+}
+.more img{
+    border-radius: 50px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    right: 30px;
+    bottom: 80px; 
+    background-color: blanchedalmond;  
+}
+.more img:hover{
+    cursor: pointer;
+}
+.card-image:hover{
+    filter: brightness(75%);
+    cursor: zoom-in;
+    }
+    @media(max-width: 1280px){
+     .targets{
+        grid-template-columns: 245px 245px 245px 245px;
+        column-count: 4;
+     }
+    }
+    @media(max-width: 768px){
+     .targets{
+        grid-template-columns: 180px 180px 180px 180px;
+        column-count: 4;
+     }
+    }
+    @media(max-width: 480px) {
+        .targets{
+            grid-template-columns: 105px 105px 105px 105px;
+            column-count: 4;   
+        }
+     }
